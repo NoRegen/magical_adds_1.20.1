@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "magical-additions",
+	"version": "${version}",
+	"name": "Magical Additions",
+	"description": "This Mod Adds Heaps Of Fun And Interesting Items And Weapons To The Game",
+	"authors": [
+		"NoRegen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/magical-additions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.noregen.magicaladditions.MagicalAdditionsClient"
+		],
+		"main": [
+			"net.noregen.magicaladditions.MagicalAdditions"
+		],
+		"fabric-datagen": [
+			"net.noregen.magicaladditions.MagicalAdditionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"magical-additions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
